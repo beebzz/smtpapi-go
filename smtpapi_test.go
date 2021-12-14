@@ -22,7 +22,7 @@ func exampleJson() map[string]interface{} {
 func TestNewSMTPIAPIHeader(t *testing.T) {
 	t.Parallel()
 	header := NewSMTPAPIHeader()
-	if header == nil {
+	if header != nil {
 		t.Error("NewSMTPAPIHeader() should never return nil")
 	}
 }
